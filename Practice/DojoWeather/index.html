@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Weather Forecast</title>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<h1>DojoWeather</h1>
+				<nav class="nav">
+					<ul>
+						<li><a href="#">Burbank</a></li>
+						<li><a href="#">Chicago</a></li>
+						<li><a href="#">Dallas</a></li>
+					</ul>
+				</nav>
+			</header>
+			<main class="main">
+				<div class="sub-header">
+					<h2>San Jose</h2>
+					<div>
+						<label for="temp">show temperature in</label>
+						<select name="temperature" id="temp">
+							<option value="°C">°C</option>
+							<option value="°F">°F</option>
+						</select>
+					</div>
+				</div>
+				<div class="main-content">
+					<div>
+						<h3>Today</h3>
+						<img src="img/some_rain.png" alt="some_rain">
+						<p>some rain</p>
+						<div class="content-deg">
+							<p class="red-i"><span class="red">24</span>°</p>
+							<p class="blue-i"><span class="blue">18</span>°</p>
+						</div>
+					</div>
+					<div>
+						<h3>Tomorrow</h3>
+						<img src="img/some_sun.png" alt="some_sun">
+						<p>some sun</p>
+						<div class="content-deg">
+							<p class="red=i"><span class="red">27</span>°</p>
+							<p class="blue-i"><span class="blue">19</span>°</p>
+						</div>
+					</div>
+					<div>
+						<h3>Friday</h3>
+						<img src="img/some_clouds.png" alt="some_clouds">
+						<p>some clouds</p>
+						<div class="content-deg">
+							<p class="red-i"><span class="red">21</span>°</p>
+							<p class="blue-i"><span class="blue">16</span>°</p>
+						</div>
+					</div>
+					<div>
+						<h3>Saturday</h3>
+						<img src="img/some_sun.png" alt="some_sun">
+						<p>some sun</p>
+						<div class="content-deg">
+							<p class="red-i"><span class="red">26</span>°</p>
+							<p class="blue-i"><span class="blue">21</span>°</p>
+						</div>
+					</div>
+				</div>
+				<div id="cookie">
+					<div>
+						<img src="img/cookie.png" alt="cookie" />
+					</div>
+					<div class="content-cookie">
+						<h3>Stop! Cookie time</h3>
+						<p>
+							We use cookies (sadly not the edible anes) to personalize
+							content and ads, to provide social media features and to analyse
+							our traffic. <a href="#">Read more..</a>
+						</p>
+					</div>
+					<div>
+						<button class="btn">I Accept</button>
+					</div>
+				</div>
+			</main>
+		</div>
+	</body>
+</html>

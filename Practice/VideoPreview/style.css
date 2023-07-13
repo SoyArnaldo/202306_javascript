@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #e9ecf4;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    display: grid;
+    margin: 20px auto;
+    justify-content: center;
+    background-color: #fff;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "header header header"
+                        "main main sidebar"
+                        "main main sidebar";
+}
+
+.header {
+    background-color: rgb(52, 94, 152);
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: header;
+    align-items: center;
+    height: 50px;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.header > h1 {
+	font-weight: 800;
+	margin: 0 20px;
+    color: #fff;
+}
+
+.search {
+	height: 30px;
+	width: 250px;
+    border-radius: 5px;
+    border: #fff;
+    outline: none;
+    font-weight: 500;
+}
+
+.btn{
+    background-color: rgb(53, 101, 159);
+    margin: 0 20px;
+	height: 30px;
+	width: 60px;
+	font-weight: 800;
+	border: 2px solid #000;
+    color: #fff;
+    border: 2px solid #000;
+    box-shadow: 4px 4px #000;
+    cursor: pointer;
+}
+
+.main {
+    grid-area: main;
+    display: flex;
+    flex-flow: column;
+    width: 500px;
+}
+
+.main h1, p {
+    margin: 0 5px;
+}
+
+.videon {
+    margin: 0 auto;
+    width: 450px;
+}
+
+.videon video {
+    height: 250px;
+    object-fit: cover;
+}
+.btnn{
+    background-color: rgb(53, 101, 159);
+	height: 30px;
+	width: 100px;
+    margin: 10px 20px;
+    color: #fff;
+    border: 2px solid #000;
+    box-shadow: 4px 4px #000;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(53, 101, 159);
+	font-weight: 600;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    
+}
+.sidebar-header {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.video-small {
+    display: flex;
+    flex-flow: row wrap;
+    width: 450px;
+    height: 500px;
+}
+
+.video-small video {
+    width: 150px;
+    height: 250px;
+    object-fit: cover;
+}
